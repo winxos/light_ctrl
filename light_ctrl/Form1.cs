@@ -139,6 +139,8 @@ namespace light_ctrl
             {
                 byte[] t = _build_frame(0x01, 0x06, 0x02, Convert.ToByte(textBox1.Text));
                 mod_frame.Enqueue(t);
+                t = _build_frame(0x01, 0x06, 0x03, Convert.ToByte(textBox1.Text));
+                mod_frame.Enqueue(t);
                 label6.Text = "设置亮度 "+ textBox1.Text;
             }
             catch

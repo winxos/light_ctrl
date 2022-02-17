@@ -41,9 +41,9 @@ namespace light_ctrl
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,7 +58,7 @@ namespace light_ctrl
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 3);
@@ -87,7 +87,7 @@ namespace light_ctrl
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.Font = new System.Drawing.Font("宋体", 18F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(118, 83);
+            this.comboBox1.Location = new System.Drawing.Point(117, 83);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(102, 32);
             this.comboBox1.TabIndex = 0;
@@ -98,7 +98,7 @@ namespace light_ctrl
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.Font = new System.Drawing.Font("宋体", 18F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(118, 126);
+            this.comboBox2.Location = new System.Drawing.Point(117, 126);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(102, 32);
             this.comboBox2.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace light_ctrl
             this.button1.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(23, 169);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 66);
+            this.button1.Size = new System.Drawing.Size(196, 66);
             this.button1.TabIndex = 2;
             this.button1.Text = "连接";
             this.button1.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@ namespace light_ctrl
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.Location = new System.Drawing.Point(23, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 43);
+            this.label1.Size = new System.Drawing.Size(88, 43);
             this.label1.TabIndex = 3;
             this.label1.Text = "端口号";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,7 +138,7 @@ namespace light_ctrl
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.Location = new System.Drawing.Point(23, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 43);
+            this.label2.Size = new System.Drawing.Size(88, 43);
             this.label2.TabIndex = 4;
             this.label2.Text = "波特率";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -148,7 +148,7 @@ namespace light_ctrl
             this.trackBar1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel1.SetColumnSpan(this.trackBar1, 2);
             this.trackBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBar1.Location = new System.Drawing.Point(234, 126);
+            this.trackBar1.Location = new System.Drawing.Point(233, 126);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(204, 37);
@@ -165,7 +165,7 @@ namespace light_ctrl
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(234, 0);
+            this.label3.Location = new System.Drawing.Point(233, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(204, 80);
             this.label3.TabIndex = 6;
@@ -178,7 +178,7 @@ namespace light_ctrl
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 15F);
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(234, 80);
+            this.label5.Location = new System.Drawing.Point(233, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 43);
             this.label5.TabIndex = 8;
@@ -191,7 +191,7 @@ namespace light_ctrl
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(23, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 33);
+            this.label6.Size = new System.Drawing.Size(88, 33);
             this.label6.TabIndex = 9;
             this.label6.Text = "消息";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,18 +201,12 @@ namespace light_ctrl
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("宋体", 18F);
             this.textBox1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox1.Location = new System.Drawing.Point(365, 83);
+            this.textBox1.Location = new System.Drawing.Point(364, 83);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 35);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "50";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox1
             // 
@@ -222,10 +216,16 @@ namespace light_ctrl
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(23, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 50;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
